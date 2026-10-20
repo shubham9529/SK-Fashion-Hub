@@ -1,0 +1,165 @@
+*{
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center ;
+    padding: 20px;
+    background-color:rgba(215, 135, 135, 0.851);
+    color: white;
+}
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    /* text-shadow: white 0px 0px 5px,white 0px 0px 10px; */
+    letter-spacing: 6px;
+}
+header nav{
+    width:40%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+header nav a{
+    color: rgb(7, 9, 158);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+    color: rgb(23, 69, 221);
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgba(215, 135, 135, 0.851);
+    /* border: groove 5px black; */
+    padding: 10px;
+    color: rgb(14, 13, 13);
+}
+footer div h2{
+    margin-top: 10px;
+}
+footer div iframe{
+    margin-top: 20px;
+}
+/* footer div a{
+    color: white;
+} */
+.menu-header
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-shadow: white 0px 0px 10px,white 0px 0px 15px;
+    letter-spacing :5px;
+    padding : 20px;
+    background-color: #F8F9FA ;
+    text-align: center;
+}
+
+.menu-container
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    width: 70%;
+    margin: auto auto;
+}
+
+.menu{
+    background-color: #F8F9FA ;
+    border: solid 2px rgb(240, 226, 226);
+    padding: 10px;
+    border-radius: 10px ;
+    transition: 1s;
+    line-height: 30px;
+}
+
+.menu:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 0px gray;
+
+}
+.btn{
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration:none ;
+}
+
+.btn-primary{
+    background-color: rgb(224, 170, 33);
+}
+
+.btn-danger{
+    background-color: rgb(211, 98, 80);
+}
+/* css for form container*/
+.form-container
+{
+    background-color: white;
+    background-size: cover;
+    padding: 50px;
+}
+
+.form-container form{
+    width: 35%;
+    border: solid 1px rgb(255, 102, 102);
+    margin: auto auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgb(220, 215, 215),0px 0px 5px white;
+    background-color: rgba(228, 208, 208, 0.7);
+    padding: 30px;
+}
+
+.form-container FORM h1{
+    color: rgba(211, 85, 85, 0.851);
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    border-bottom: solid 4px rgba(215, 135, 135, 0.851);
+}
+
+.form-container form label{
+    display: block;
+    color: rgba(211, 85, 85, 0.851);
+    font-weight: bold;
+}
+
+.form-container form input[type=text],
+.form-container form input[type=email],
+.form-container form input[type=password],
+.form-container form select,
+.form-container form textarea
+{
+    width: 100%;
+    margin-bottom: 10PX;
+    padding: 5PX;
+}
+.btn-submit
+{
+    background-color:rgba(211, 85, 85, 0.851);
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(18, 16, 16);
+
+}
+/* for jr apan minimze screen kale tr webside adjust zale pahja */
+@media only screen and (max-width:800px)
+{
+    header,header nav,header nav a ,footer
+    {
+        display:block;
+        width:100%;
+    }
+}
